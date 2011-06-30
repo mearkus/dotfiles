@@ -1,0 +1,52 @@
+##
+# This file should be renamed ".gitconfig" and placed inside your home directory.
+##
+
+[user]
+  name = 
+  email = 
+[github]
+  user = 
+  token = 
+[alias]
+  br = branch
+  ci = commit
+  cia = commit -a
+  co = checkout
+  df = diff
+  lg = log -p
+  st = status
+  sth = stash
+  up = pull origin
+  who = shortlog -s --
+  spull = !git-svn rebase
+  spush = !git-svn dcommit
+  ddiff = !git-diff --no-prefix
+  last = "!fn() { S=1; A=`git config --get user.name`; if [ -n \"$1\" ]; then S=\"$1\"; shift; fi; if [ -n \"$1\" ];then if [ \"$1\" != \"me\" ]; then A=\"$1\"; fi; shift; fi; git log -i --since=\"$S days ago\" --author=\"$A\" --branches --remotes --format='%C(yellow)%t%Creset %s (%an)' \"$@\"; }; fn"
+[color]
+  ui = auto
+  branch = auto
+  diff = auto
+  status = auto
+[gc]
+  pruneexpire = 14 days
+[branch]
+  autosetupmerge = true
+[merge]
+  tool = meld
+[mergetool]
+  prompt = false
+  keepBackup = false
+[mergetool "meld"]
+  cmd = meld "$LOCAL" "$REMOTE"
+  trustExitCode = false
+[diff]
+  tool = meld
+[difftool]
+  prompt = false
+[difftool "meld"]
+  cmd = meld "$LOCAL" "$REMOTE"
+[push]
+	default = tracking
+[core]
+	editor = vim
