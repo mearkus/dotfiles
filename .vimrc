@@ -44,6 +44,8 @@ set shiftwidth=2 " Number of spaces to autoindent.
 set softtabstop=2 " Number of spaces for a tab.
 set autoindent " Set autoindenting on.
 set smartindent " Automatically insert another level of indent when needed. 
+set vb t_vb=
+set ruler
 
 " colors, etc.
 syntax on
