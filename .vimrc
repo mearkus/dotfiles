@@ -37,6 +37,14 @@ filetype plugin indent on     " required!
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle commands are not allowed.
 
+if has("win32")
+  source $VIMRUNTIME/vimrc_example.vim
+  source $VIMRUNTIME/mswin.vim
+  behave mswin
+   " This will stop this error-> E303: Unable to open swap file for [No Name], recovery impossible
+  set directory=.,$TEMP
+endif
+
 " Tabs, Spaces and Indentation.
 set expandtab " Use spaces for tabs.
 set tabstop=2 " Number of spaces to use for tabs.
