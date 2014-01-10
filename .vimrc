@@ -19,8 +19,6 @@ Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
-" non-GitHub repos
-Bundle 'wincent/Command-T.git'
 
 if has("mac")
   Bundle 'henrik/vim-open-url'
