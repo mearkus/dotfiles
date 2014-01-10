@@ -25,6 +25,7 @@ Bundle 'henrik/vim-open-url'
 Bundle 'scrooloose/nerdtree.git'
 Bundle 'airblade/vim-rooter'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'altercation/vim-colors-solarized.git'
 
 filetype plugin indent on     " required!
 "
@@ -56,7 +57,9 @@ set vb t_vb=
 set ruler
 
 " colors, etc.
-syntax on
+syntax enable
+set background=dark
+colorscheme solarized
 
 let mapleader = ","
 nmap <leader>ne :NERDTree<cr>
