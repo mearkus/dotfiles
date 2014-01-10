@@ -14,17 +14,18 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'vim-ruby/vim-ruby.git'
 Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 " non-GitHub repos
-Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'wincent/Command-T.git'
 
-Bundle 'henrik/vim-open-url'
+if has("mac")
+  Bundle 'henrik/vim-open-url'
+endif
 Bundle 'scrooloose/nerdtree.git'
-Bundle 'airblade/vim-rooter'
-Bundle 'airblade/vim-gitgutter'
 Bundle 'altercation/vim-colors-solarized.git'
 
 filetype plugin indent on     " required!
