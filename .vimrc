@@ -24,6 +24,7 @@ if has("mac")
   Bundle 'henrik/vim-open-url'
 endif
 Bundle 'scrooloose/nerdtree.git'
+Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'altercation/vim-colors-solarized.git'
 
 filetype plugin indent on     " required!
