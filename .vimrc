@@ -26,6 +26,7 @@ endif
 Bundle 'scrooloose/nerdtree.git'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'altercation/vim-colors-solarized.git'
+Bundle 'ervandew/supertab'
 
 filetype plugin indent on     " required!
 "
